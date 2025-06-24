@@ -1,10 +1,10 @@
 <div align="center">
-	<img src="./assets/DocTalk.png" alt="DocTalk.ai Banner" width="100%">
+	<img src="./assets/DocTalk.png" alt="DocTalk.ai Banner" width="80%" height="auto" style="border-radius: 10px;" >
 	<h1>DocTalk.ai - AI-powered doctor consultation system</h1>
 	<p><strong>Designed to simulate a real doctor interaction</strong></p>
 </div>
 
-# 🚗 DocTalk.ai - AI-powered doctor consultation system
+# DocTalk.ai - AI-powered doctor consultation system
 
 
 DocTalk.ai is an AI-powered doctor consultation web app that provides instant, intelligent healthcare advice anytime, anywhere. Designed to simulate a real doctor interaction, it uses natural language processing and medical data to understand symptoms, suggest possible causes, and recommend next steps—whether it's home care or seeking professional attention. With 24/7 availability, multilingual support, and a user-friendly interface, DocTalk.ai empowers users with personalized, confidential, and accessible medical guidance in just a few clicks.
@@ -102,8 +102,6 @@ These tools together enable a seamless, secure, and intelligent doctor consultat
 ## 🔧 Configuration
 The project is divided into two main parts: **Frontend** (Next.js + React) and **Backend** (Node.js/Express). Each part requires its own configuration.
 
-### 1. Frontend Configuration
-
 - **Environment Variables:**  
   Create a `.env` file in the `Frontend` directory with the following variables:
 
@@ -123,29 +121,9 @@ The project is divided into two main parts: **Frontend** (Next.js + React) and *
 
 - **Dependencies:**  
   All required packages are listed in `package.json`.  
-  Install with `npm install` in the `Frontend` directory.
+  Install with `npm install` 
 
-### 2. Backend Configuration
-
-- **Environment Variables:**  
-  Create a `.env` file in the `Backend` directory with the following variables:
-
-  ```
-  PORT=3000
-  MONGO_URL=your_mongodb_url
-  JWT_SECRET=your_jwt_secret
-  GOOGLE_MAPS_API_KEY=your_google_maps_api_key
-  GEMINI_API_KEY=your_gemini_api_key
-  ```
-
-  - `PORT`: Port for the backend server.
-  - `MONGO_URL`: MongoDB connection string.
-  - `GEMINI_API_KEY`: API key for Gemini AI model integration.
-
-- **Dependencies:**  
-  Install backend dependencies with `npm install` in the `Backend` directory.
-
-### 3. Additional Notes
+### Additional Notes
 
 - **Clerk Setup:**  
   Sign up at [Clerk.dev](https://clerk.dev/) to obtain your publishable key and configure authentication.
