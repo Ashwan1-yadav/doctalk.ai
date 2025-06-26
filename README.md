@@ -100,20 +100,30 @@ These tools together enable a seamless, secure, and intelligent doctor consultat
 
 
 ## 🔧 Configuration
-The project is divided into two main parts: **Frontend** (Next.js + React) and **Backend** (Node.js/Express). Each part requires its own configuration.
 
 - **Environment Variables:**  
-  Create a `.env` file in the `Frontend` directory with the following variables:
+  Create a `.env` file in the `doctalk.ai` directory with the following variables:
 
   ```
-  NEXT_PUBLIC_API_BASE_URL=http://localhost:3000
-  NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
-  NEXT_PUBLIC_VAPI_API_KEY=your_vapi_api_key
+  DATABASE_URL="your_postgresql_url"
+  NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_Y2FyZWZ1bC1tb3JheS05OC5jbGVyay5hY2NvdW50cy5kZXYk
+
+  CLERK_SECRET_KEY="your_clerk_secret_key"
+
+  NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+  NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL=/
+  NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL=/
+
+  NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+  NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL=/
+  NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL=/
   ```
 
+  - `DATABASE_URL`: PostgreSQL database URL.
   - `NEXT_PUBLIC_API_BASE_URL`: The base URL for backend API requests.
   - `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`: Clerk authentication public key.
   - `NEXT_PUBLIC_VAPI_API_KEY`: API key for Vapi voice input integration.
+  - `CLERK_SECRET_KEY`: Clerk secret key.
 
 - **Fonts & Styling:**  
   The app uses [Geist](https://vercel.com/font) fonts and [Tailwind CSS](https://tailwindcss.com/).  
