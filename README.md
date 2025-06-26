@@ -106,8 +106,9 @@ These tools together enable a seamless, secure, and intelligent doctor consultat
 
   ```
   DATABASE_URL="your_postgresql_url"
-  NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_Y2FyZWZ1bC1tb3JheS05OC5jbGVyay5hY2NvdW50cy5kZXYk
-
+  NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY="your_clerk_publishable_key"
+  NEXT_PUBLIC_VAPI_API_KEY="your_vapi_api_key"
+  NEXT_PUBLIC_API_BASE_URL="http://localhost:3000"
   CLERK_SECRET_KEY="your_clerk_secret_key"
 
   NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
@@ -124,6 +125,7 @@ These tools together enable a seamless, secure, and intelligent doctor consultat
   - `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`: Clerk authentication public key.
   - `NEXT_PUBLIC_VAPI_API_KEY`: API key for Vapi voice input integration.
   - `CLERK_SECRET_KEY`: Clerk secret key.
+  
 
 - **Fonts & Styling:**  
   The app uses [Geist](https://vercel.com/font) fonts and [Tailwind CSS](https://tailwindcss.com/).  
