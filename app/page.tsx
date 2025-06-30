@@ -48,8 +48,8 @@ export default function HeroSectionOne() {
           }}
           className="relative z-10 mx-auto max-w-xl py-4 text-center text-lg font-normal text-neutral-600 dark:text-neutral-400"
         >
-          Talk to a Doctor in Seconds—No Waiting Rooms, No Appointments. Get
-          Real Conversations, Real Care. With DocTalk.ai, you can talk to your
+          Talk to a Doctor in Seconds — No Waiting Rooms, No Appointments. Get
+          Real Conversations, Real Care, With DocTalk.ai, you can talk to your
           doctor in seconds, not days. Try our best in class, state of the art,
           cutting edge AI tools to get your conversations up.
         </motion.p>
