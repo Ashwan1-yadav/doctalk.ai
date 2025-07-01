@@ -1,5 +1,5 @@
 <div align="center">
-	<img src="./assets/Banner.png" alt="DocTalk.ai Banner" width="100%" height="auto" style="border-radius: 10px;" >
+	<img src="./assets/banner.png" alt="DocTalk.ai Banner" width="100%" height="auto" style="border-radius: 10px;" >
 </div>
 
 # 🩺🤖 DocTalk.ai - AI-powered doctor consultation system 
