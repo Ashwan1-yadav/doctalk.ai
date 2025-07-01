@@ -108,9 +108,9 @@ Here are some screenshots showcasing the DocTalk.ai user interface:
 
 ---
 
-### Features
+### Dashboard
 
-![Features](./assets/screenshots/2.png)
+![Dashboard](./assets/screenshots/2.png)
 
 ---
 
@@ -120,15 +120,15 @@ Here are some screenshots showcasing the DocTalk.ai user interface:
 
 ---
 
-### AI Doctors Team
+### AI Doctors Search
 
-![AI Doctors Team](./assets/screenshots/4.png)
+![AI Doctors Search](./assets/screenshots/4.png)
 
 ---
 
-### Footer Section
+### Contact Us
 
-![Footer Section](./assets/screenshots/5.png)
+![Contact Us](./assets/screenshots/5.png)
 
 > _All screenshots are located in the `assets/screenshots/` folder. UI may evolve with future updates._
 
