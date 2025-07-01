@@ -2,7 +2,7 @@
 	<img src="./assets/banner.png" alt="DocTalk.ai Banner" width="100%" height="auto" style="border-radius: 10px;" >
 </div>
 
-# 🩺🤖 DocTalk.ai - AI-powered doctor consultation system 
+# 🩺🤖 DocTalk.ai - AI-powered doctor consultation 
 
 
 🚀 DocTalk.ai is your AI-powered doctor—get instant, smart healthcare advice anytime, anywhere! Chat naturally about symptoms, get quick answers, and clear next steps (home care or see a doctor). Enjoy 24/7 access, multilingual support, and a simple, private interface for fast, personalized medical help in just a few clicks. 🚀🌐🔒
