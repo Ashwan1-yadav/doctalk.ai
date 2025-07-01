@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 export default function HeroSectionOne() {
   return (
     <div>
-      <div className="relative  flex  flex-col items-center justify-center">
+      <div className="relative  flex mt-18 flex-col items-center justify-center">
       <div className="absolute inset-y-0 left-0 h-full w-px bg-neutral-200/80 dark:bg-neutral-800/80">
         <div className="absolute top-0 h-40 w-px bg-gradient-to-b from-transparent via-blue-500 to-transparent" />
       </div>
@@ -322,10 +322,10 @@ export default function HeroSectionOne() {
           <h3 className="text-xl font-semibold mb-1 text-[#2E2C63] dark:text-blue-200">Dr. Ava Patel</h3>
           <p className="text-gray-600 dark:text-gray-300 mb-4">General Physician</p>
           <div className="flex gap-2">
-            <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
+            <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:shadow-lg dark:bg-white dark:text-black dark:hover:bg-gray-200">
               Consult
             </button>
-            <button className="border border-[#2E2C63] text-[#2E2C63] px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 hover:bg-blue-50 dark:border-blue-400 dark:text-blue-200 dark:hover:bg-gray-700">
+            <button className="border border-[#2E2C63] text-[#2E2C63] px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:text-white hover:shadow-lg dark:border-blue-400 dark:text-blue-200 dark:hover:bg-gray-700">
               View
             </button>
           </div>
@@ -339,10 +339,10 @@ export default function HeroSectionOne() {
           <h3 className="text-xl font-semibold mb-1 text-[#2E2C63] dark:text-blue-200">Dr. Ethan Kim</h3>
           <p className="text-gray-600 dark:text-gray-300 mb-4">Surgeon</p>
           <div className="flex gap-2">
-            <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
+            <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:shadow-lg dark:bg-white dark:text-black dark:hover:bg-gray-200">
               Consult
             </button>
-            <button className="border border-[#2E2C63] text-[#2E2C63] px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 hover:bg-blue-50 dark:border-blue-400 dark:text-blue-200 dark:hover:bg-gray-700">
+            <button className="border border-[#2E2C63] text-[#2E2C63] px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:text-white hover:shadow-lg dark:border-blue-400 dark:text-blue-200 dark:hover:bg-gray-700">
               View
             </button>
           </div>
@@ -356,10 +356,10 @@ export default function HeroSectionOne() {
           <h3 className="text-xl font-semibold mb-1 text-[#2E2C63] dark:text-blue-200">Dr. Sophia Lee</h3>
           <p className="text-gray-600 dark:text-gray-300 mb-4">ENT Specialist</p>
           <div className="flex gap-2">
-            <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
+            <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:shadow-lg dark:bg-white dark:text-black dark:hover:bg-gray-200">
               Consult
             </button>
-            <button className="border border-[#2E2C63] text-[#2E2C63] px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 hover:bg-blue-50 dark:border-blue-400 dark:text-blue-200 dark:hover:bg-gray-700">
+            <button className="border border-[#2E2C63] text-[#2E2C63] px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:text-white hover:shadow-lg dark:border-blue-400 dark:text-blue-200 dark:hover:bg-gray-700">
               View
             </button>
           </div>
@@ -373,10 +373,10 @@ export default function HeroSectionOne() {
           <h3 className="text-xl font-semibold mb-1 text-[#2E2C63] dark:text-blue-200">Dr. Liam Smith</h3>
           <p className="text-gray-600 dark:text-gray-300 mb-4">Pediatrician</p>
           <div className="flex gap-2">
-            <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
+            <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:shadow-lg dark:bg-white dark:text-black dark:hover:bg-gray-200">
               Consult
             </button>
-            <button className="border border-[#2E2C63] text-[#2E2C63] px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 hover:bg-blue-50 dark:border-blue-400 dark:text-blue-200 dark:hover:bg-gray-700">
+            <button className="border border-[#2E2C63] text-[#2E2C63] px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:text-white hover:shadow-lg dark:border-blue-400 dark:text-blue-200 dark:hover:bg-gray-700">
               View
             </button>
           </div>
@@ -390,10 +390,10 @@ export default function HeroSectionOne() {
           <h3 className="text-xl font-semibold mb-1 text-[#2E2C63] dark:text-blue-200">Dr. Carlos Rivera</h3>
           <p className="text-gray-600 dark:text-gray-300 mb-4">Cardiologist</p>
           <div className="flex gap-2">
-            <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
+            <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:shadow-lg dark:bg-white dark:text-black dark:hover:bg-gray-200">
               Consult
             </button>
-            <button className="border border-[#2E2C63] text-[#2E2C63] px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 hover:bg-blue-50 dark:border-blue-400 dark:text-blue-200 dark:hover:bg-gray-700">
+            <button className="border border-[#2E2C63] text-[#2E2C63] px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:text-white hover:shadow-lg dark:border-blue-400 dark:text-blue-200 dark:hover:bg-gray-700">
               View
             </button>
           </div>
@@ -407,10 +407,10 @@ export default function HeroSectionOne() {
           <h3 className="text-xl font-semibold mb-1 text-[#2E2C63] dark:text-blue-200">Dr. Emily Zhang</h3>
           <p className="text-gray-600 dark:text-gray-300 mb-4">Dermatologist</p>
           <div className="flex gap-2">
-            <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
+            <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:shadow-lg dark:bg-white dark:text-black dark:hover:bg-gray-200">
               Consult
             </button>
-            <button className="border border-[#2E2C63] text-[#2E2C63] px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 hover:bg-blue-50 dark:border-blue-400 dark:text-blue-200 dark:hover:bg-gray-700">
+            <button className="border border-[#2E2C63] text-[#2E2C63] px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:text-white hover:shadow-lg dark:border-blue-400 dark:text-blue-200 dark:hover:bg-gray-700">
               View
             </button>
           </div>
@@ -424,10 +424,10 @@ export default function HeroSectionOne() {
           <h3 className="text-xl font-semibold mb-1 text-[#2E2C63] dark:text-blue-200">Dr. Ahmed Hassan</h3>
           <p className="text-gray-600 dark:text-gray-300 mb-4">Neurologist</p>
           <div className="flex gap-2">
-            <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
+            <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:shadow-lg dark:bg-white dark:text-black dark:hover:bg-gray-200">
               Consult
             </button>
-            <button className="border border-[#2E2C63] text-[#2E2C63] px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 hover:bg-blue-50 dark:border-blue-400 dark:text-blue-200 dark:hover:bg-gray-700">
+            <button className="border border-[#2E2C63] text-[#2E2C63] px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:text-white hover:shadow-lg dark:border-blue-400 dark:text-blue-200 dark:hover:bg-gray-700">
               View
             </button>
           </div>
@@ -441,78 +441,10 @@ export default function HeroSectionOne() {
           <h3 className="text-xl font-semibold mb-1 text-[#2E2C63] dark:text-blue-200">Dr. Maria Rossi</h3>
           <p className="text-gray-600 dark:text-gray-300 mb-4">Gynecologist</p>
           <div className="flex gap-2">
-            <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
+            <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:shadow-lg dark:bg-white dark:text-black dark:hover:bg-gray-200">
               Consult
             </button>
-            <button className="border border-[#2E2C63] text-[#2E2C63] px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 hover:bg-blue-50 dark:border-blue-400 dark:text-blue-200 dark:hover:bg-gray-700">
-              View
-            </button>
-          </div>
-        </div>
-        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 flex flex-col items-center text-center border border-transparent hover:border-[#2E2C63] dark:hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-2">
-          <img
-            src="https://randomuser.me/api/portraits/men/23.jpg"
-            alt="Dr. John Miller"
-            className="w-20 h-20 rounded-full object-cover mb-4 border-4 border-[#2E2C63] shadow"
-          />
-          <h3 className="text-xl font-semibold mb-1 text-[#2E2C63] dark:text-blue-200">Dr. John Miller</h3>
-          <p className="text-gray-600 dark:text-gray-300 mb-4">Orthopedic Surgeon</p>
-          <div className="flex gap-2">
-            <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
-              Consult
-            </button>
-            <button className="border border-[#2E2C63] text-[#2E2C63] px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 hover:bg-blue-50 dark:border-blue-400 dark:text-blue-200 dark:hover:bg-gray-700">
-              View
-            </button>
-          </div>
-        </div>
-        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 flex flex-col items-center text-center border border-transparent hover:border-[#2E2C63] dark:hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-2">
-          <img
-            src="https://randomuser.me/api/portraits/women/21.jpg"
-            alt="Dr. Chloe Dubois"
-            className="w-20 h-20 rounded-full object-cover mb-4 border-4 border-[#2E2C63] shadow"
-          />
-          <h3 className="text-xl font-semibold mb-1 text-[#2E2C63] dark:text-blue-200">Dr. Chloe Dubois</h3>
-          <p className="text-gray-600 dark:text-gray-300 mb-4">Psychiatrist</p>
-          <div className="flex gap-2">
-            <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
-              Consult
-            </button>
-            <button className="border border-[#2E2C63] text-[#2E2C63] px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 hover:bg-blue-50 dark:border-blue-400 dark:text-blue-200 dark:hover:bg-gray-700">
-              View
-            </button>
-          </div>
-        </div>
-        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 flex flex-col items-center text-center border border-transparent hover:border-[#2E2C63] dark:hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-2">
-          <img
-            src="https://randomuser.me/api/portraits/men/81.jpg"
-            alt="Dr. Hiroshi Tanaka"
-            className="w-20 h-20 rounded-full object-cover mb-4 border-4 border-[#2E2C63] shadow"
-          />
-          <h3 className="text-xl font-semibold mb-1 text-[#2E2C63] dark:text-blue-200">Dr. Hiroshi Tanaka</h3>
-          <p className="text-gray-600 dark:text-gray-300 mb-4">Oncologist</p>
-          <div className="flex gap-2">
-            <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
-              Consult
-            </button>
-            <button className="border border-[#2E2C63] text-[#2E2C63] px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 hover:bg-blue-50 dark:border-blue-400 dark:text-blue-200 dark:hover:bg-gray-700">
-              View
-            </button>
-          </div>
-        </div>
-        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 flex flex-col items-center text-center border border-transparent hover:border-[#2E2C63] dark:hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-2">
-          <img
-            src="https://randomuser.me/api/portraits/women/36.jpg"
-            alt="Dr. Isabella Silva"
-            className="w-20 h-20 rounded-full object-cover mb-4 border-4 border-[#2E2C63] shadow"
-          />
-          <h3 className="text-xl font-semibold mb-1 text-[#2E2C63] dark:text-blue-200">Dr. Isabella Silva</h3>
-          <p className="text-gray-600 dark:text-gray-300 mb-4">Endocrinologist</p>
-          <div className="flex gap-2">
-            <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
-              Consult
-            </button>
-            <button className="border border-[#2E2C63] text-[#2E2C63] px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 hover:bg-blue-50 dark:border-blue-400 dark:text-blue-200 dark:hover:bg-gray-700">
+            <button className="border border-[#2E2C63] text-[#2E2C63] px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:text-white hover:shadow-lg dark:border-blue-400 dark:text-blue-200 dark:hover:bg-gray-700">
               View
             </button>
           </div>
