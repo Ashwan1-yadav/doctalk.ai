@@ -98,6 +98,42 @@ These tools together enable a seamless, secure, and intelligent doctor consultat
 - 🚀 **Easy Onboarding:** Simple registration and onboarding process for new users.
 - 🔄 **Continuous Updates:** Regular improvements and new features based on user feedback and medical advancements.
 
+## 🖼️ UI Screenshots
+
+Here are some screenshots showcasing the DocTalk.ai user interface:
+
+### Home Page
+
+![Home Page](./assets/screenshots/1.png)
+
+---
+
+### Features
+
+![Features](./assets/screenshots/2.png)
+
+---
+
+### Workflow
+
+![Workflow](./assets/screenshots/3.png)
+
+---
+
+### AI Doctors Team
+
+![AI Doctors Team](./assets/screenshots/4.png)
+
+---
+
+### Footer Section
+
+![Footer Section](./assets/screenshots/5.png)
+
+> _All screenshots are located in the `assets/screenshots/` folder. UI may evolve with future updates._
+
+
+
 
 ## 🔧 Configuration
 

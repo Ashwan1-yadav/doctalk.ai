@@ -132,7 +132,7 @@ export default function HeroSectionOne() {
         </motion.div>
       </div>
     </div>
-    <div className="mt-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+    <div className="mt-[-90px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
       <div className="bg-white dark:bg-gray-900 rounded-xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-all duration-300 border border-transparent hover:border-[#2E2C63] dark:hover:border-blue-400 transform transition-transform hover:-translate-y-2">
         <div className="bg-[#2E2C63] text-white rounded-full p-3 mb-4">
           <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
