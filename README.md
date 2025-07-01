@@ -5,7 +5,7 @@
 # 🩺🤖 DocTalk.ai - AI-powered doctor consultation system 
 
 
-DocTalk.ai is an AI-powered doctor consultation web app that provides instant, intelligent healthcare advice anytime, anywhere. Designed to simulate a real doctor interaction, it uses natural language processing and medical data to understand symptoms, suggest possible causes, and recommend next steps—whether it's home care or seeking professional attention. With 24/7 availability, multilingual support, and a user-friendly interface, DocTalk.ai empowers users with personalized, confidential, and accessible medical guidance in just a few clicks.
+🚀 DocTalk.ai is your AI-powered doctor—get instant, smart healthcare advice anytime, anywhere! Chat naturally about symptoms, get quick answers, and clear next steps (home care or see a doctor). Enjoy 24/7 access, multilingual support, and a simple, private interface for fast, personalized medical help in just a few clicks. 🚀🌐🔒
 
 ### ✨ Key Features
 
