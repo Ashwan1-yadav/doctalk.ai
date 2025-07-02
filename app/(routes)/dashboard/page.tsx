@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import Navbar from '@/app/_components/Navbar';
 
 type Doctor = {
   id: number;
@@ -172,10 +173,13 @@ export default function DoctorConsultationUI() {
   };
 
   return (
-    <div className="min-h-screen mt-17 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
-      <div className="max-w-7xl mx-auto px-4 py-6">
+    <div className="min-h-screen mt-17 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 overflow-hidden">
+      <Navbar/>
+      
+      <div className="max-w-7xl mx-auto px-4 py-6 overflow-hidden">
+      
         {/* Navigation Tabs */}
-        <div className="bg-white dark:bg-gray-900 rounded-xl shadow-md mb-6 p-2">
+        <div className="bg-white dark:bg-gray-900 rounded-xl shadow-md mb-6 p-2 overflow-hidden">
           <div className="flex gap-2">
             {[
               { id: "consult", label: "New Consultation", icon: "M12 8v4l3 3" },

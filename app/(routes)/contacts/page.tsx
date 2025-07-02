@@ -2,7 +2,8 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle } from 'lucide-react';
-
+import Navbar from '@/app/_components/Navbar';
+import Link from 'next/link';
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: '',
@@ -38,7 +39,8 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen mt-17 px-3 bg-gradient-to-br from-[#f8fafc] via-[#e0e7ff] to-[#f1f5f9] dark:from-[#1e293b] dark:via-[#2e2c63] dark:to-[#1e293b]">
+    <div className="min-h-screen mt-17 px-16 bg-gradient-to-br from-[#f8fafc] via-[#e0e7ff] to-[#f1f5f9] dark:from-[#1e293b] dark:via-[#2e2c63] dark:to-[#1e293b]">
+      <Navbar/>
       {/* Hero Section */}
       <div className="relative flex flex-col items-center justify-center pt-20 pb-16">
         <div className="absolute inset-y-0 left-0 h-full w-px bg-neutral-200/80 dark:bg-neutral-800/80">
@@ -156,45 +158,47 @@ export default function ContactPage() {
             <div className="bg-white dark:bg-gray-900 rounded-xl shadow-md p-6 border border-transparent hover:border-[#2E2C63] dark:hover:border-blue-400 transition-all duration-300">
               <h3 className="text-xl font-semibold text-[#2E2C63] dark:text-blue-200 mb-4 flex items-center">
                 <MapPin className="w-5 h-5 mr-2" />
-                Our Location in Firozabad
+                Our Location in Agra, Uttar Pradesh
               </h3>
               <div className="relative w-full h-64 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-700 rounded-lg overflow-hidden flex items-center justify-center">
-                {/* Simple custom illustration for Om Medical, Shukla Market, Rahana Road, Firozabad */}
+                {/* Simple custom illustration for Agra, Uttar Pradesh */}
                 <svg viewBox="0 0 400 256" className="w-full h-full">
                   {/* Background */}
                   <rect width="400" height="256" fill="#e0e7ff" className="dark:fill-gray-800"/>
                   
-                  {/* Main Road (Rahana Road) */}
-                  <rect x="180" y="0" width="40" height="256" fill="#6b7280" opacity="0.3"/>
-                  <rect x="0" y="120" width="400" height="20" fill="#6b7280" opacity="0.2"/>
+                  {/* Yamuna River */}
+                  <ellipse cx="320" cy="200" rx="60" ry="18" fill="#60a5fa" opacity="0.25"/>
                   
-                  {/* Shukla Market Block */}
-                  <rect x="220" y="100" width="60" height="40" fill="#fbbf24" stroke="#2E2C63" strokeWidth="2" rx="6"/>
-                  <text x="250" y="125" textAnchor="middle" fontSize="12" fill="#2E2C63" fontWeight="bold">Shukla</text>
-                  <text x="250" y="140" textAnchor="middle" fontSize="12" fill="#2E2C63" fontWeight="bold">Market</text>
+                  {/* Main Road */}
+                  <rect x="60" y="110" width="280" height="18" fill="#6b7280" opacity="0.2"/>
+                  <text x="200" y="105" textAnchor="middle" fontSize="11" fill="#2E2C63" fontWeight="bold">MG Road</text>
                   
-                  {/* Om Medical Shop */}
+                  {/* Taj Mahal Block */}
                   <g>
-                    <rect x="235" y="110" width="30" height="20" fill="#2E2C63" rx="3"/>
-                    <rect x="245" y="120" width="10" height="10" fill="#fff"/>
-                    <text x="250" y="118" textAnchor="middle" fontSize="8" fill="#fff" fontWeight="bold">Om</text>
-                    <text x="250" y="135" textAnchor="middle" fontSize="8" fill="#fff">Medical</text>
+                    <rect x="170" y="60" width="60" height="40" fill="#fff" stroke="#2E2C63" strokeWidth="2" rx="8"/>
+                    {/* Taj domes */}
+                    <ellipse cx="200" cy="60" rx="10" ry="8" fill="#fff" stroke="#2E2C63" strokeWidth="2"/>
+                    <ellipse cx="230" cy="60" rx="10" ry="8" fill="#fff" stroke="#2E2C63" strokeWidth="2"/>
+                    {/* Taj minarets */}
+                    <rect x="165" y="65" width="6" height="30" fill="#fff" stroke="#2E2C63" strokeWidth="1"/>
+                    <rect x="229" y="65" width="6" height="30" fill="#fff" stroke="#2E2C63" strokeWidth="1"/>
+                    {/* Taj Mahal label */}
+                    <text x="200" y="90" textAnchor="middle" fontSize="12" fill="#2E2C63" fontWeight="bold">Taj Mahal</text>
                   </g>
                   
                   {/* Location Pin */}
                   <g>
-                    <circle cx="250" cy="120" r="7" fill="#ff4444" stroke="#2E2C63" strokeWidth="2"/>
-                    <polygon points="250,127 246,135 254,135" fill="#ff4444"/>
+                    <circle cx="200" cy="80" r="9" fill="#ff4444" stroke="#2E2C63" strokeWidth="2"/>
+                    <polygon points="200,89 195,105 205,105" fill="#ff4444"/>
                   </g>
                   
-                  {/* Label for Rahana Road */}
-                  <text x="200" y="30" textAnchor="middle" fontSize="11" fill="#2E2C63" fontWeight="bold">Rahana Road</text>
-                  
-                  {/* Firozabad City Label */}
-                  <text x="350" y="240" textAnchor="end" fontSize="13" fill="#2E2C63" fontWeight="bold">Firozabad</text>
+                  {/* Agra City Label */}
+                  <text x="350" y="240" textAnchor="end" fontSize="13" fill="#2E2C63" fontWeight="bold">Agra</text>
+                  {/* Uttar Pradesh Label */}
+                  <text x="50" y="240" textAnchor="start" fontSize="11" fill="#2E2C63" fontWeight="bold">Uttar Pradesh</text>
                 </svg>
                 <div className="absolute bottom-2 left-2 bg-white/90 dark:bg-gray-800/90 px-2 py-1 rounded text-xs text-[#2E2C63] dark:text-blue-200">
-                  Om Medical, Shukla Market, Rahana Road, Firozabad, Uttar Pradesh, India
+                  Near Taj Mahal, MG Road, Agra, Uttar Pradesh, India
                 </div>
               </div>
             </div>
@@ -331,12 +335,12 @@ export default function ContactPage() {
             For urgent medical questions, remember that DocTalk.ai is available 24/7. Our AI doctors are always ready to assist you with immediate medical guidance and support.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <button className="bg-white text-[#2E2C63] font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition-all duration-300 hover:scale-105">
-              Chat with AI Doctor
-            </button>
-            <button className="border-2 border-white text-white font-semibold px-8 py-3 rounded-full hover:bg-white hover:text-[#2E2C63] transition-all duration-300 hover:scale-105">
-              Emergency Support
-            </button>
+            <Link href="/dashboard" passHref>
+              <button className="bg-white text-[#2E2C63] font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition-all duration-300 hover:scale-105 cursor-pointer">
+                Chat with AI Doctor
+              </button>
+            </Link>
+            
           </div>
         </motion.div>
       </div>

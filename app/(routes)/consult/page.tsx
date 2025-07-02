@@ -1,3 +1,4 @@
+import Navbar from '@/app/_components/Navbar';
 import React, { useState } from 'react';
 
 const mockHistory = [
@@ -59,6 +60,7 @@ export default function ConsultPage() {
 
   return (
     <div className="max-w-5xl mx-auto py-12 px-4 space-y-12">
+      <Navbar/>
       {/* Consult to Doctor */}
       <section className="bg-white dark:bg-gray-900 rounded-xl shadow-md p-8 mb-8">
         <h2 className="text-2xl font-bold text-[#2E2C63] mb-4">Consult to Doctor</h2>

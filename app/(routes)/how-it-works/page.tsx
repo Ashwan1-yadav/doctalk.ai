@@ -2,6 +2,8 @@
 
 import { motion } from "motion/react";
 import { useState } from "react";
+import Navbar from '@/app/_components/Navbar';
+import Link from 'next/link';
 
 export default function HowItWorksPage() {
   const [activeStep, setActiveStep] = useState(0);
@@ -104,6 +106,7 @@ export default function HowItWorksPage() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
+      <Navbar/>
       {/* Hero Section */}
       <div className="relative flex mt-18 flex-col items-center justify-center">
         <div className="absolute inset-y-0 left-0 h-full w-px bg-neutral-200/80 dark:bg-neutral-800/80">
@@ -434,12 +437,18 @@ export default function HowItWorksPage() {
               Join thousands of users who have already discovered the convenience of instant, AI-powered medical guidance. Your health journey starts with a single click.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-[#2E2C63] font-semibold px-8 py-3 rounded-full text-lg shadow-md transition-all duration-300 hover:bg-gray-200 hover:scale-105">
+              <Link
+                href="/dashboard"
+                className="bg-white text-[#2E2C63] font-semibold px-8 py-3 rounded-full text-lg shadow-md transition-all duration-300 hover:bg-gray-200 hover:scale-105 text-center"
+              >
                 Get Started Now
-              </button>
-              <button className="border-2 border-white text-white font-semibold px-8 py-3 rounded-full text-lg transition-all duration-300 hover:bg-white hover:text-[#2E2C63]">
-                Watch Demo
-              </button>
+              </Link>
+              <Link
+                href="/contacts"
+                className="border-2 border-white text-white font-semibold px-8 py-3 rounded-full text-lg transition-all duration-300 hover:bg-white hover:text-[#2E2C63] text-center"
+              >
+                Contact Support
+              </Link>
             </div>
           </div>
         </div>

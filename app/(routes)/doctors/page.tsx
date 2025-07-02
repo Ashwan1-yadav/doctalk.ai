@@ -1,6 +1,8 @@
 "use client";
 import React, { useState, useMemo } from 'react';
 import { Search, Filter, Star, Clock, MapPin, Users, X } from 'lucide-react';
+import Navbar from '@/app/_components/Navbar';
+import { motion } from 'framer-motion';
 
 type Doctor = {
   id: number;
@@ -259,6 +261,7 @@ const DoctorListingPage: React.FC = () => {
 
   return (
     <div className="min-h-screen mt-17 bg-gray-50 dark:bg-gray-900">
+      <Navbar/>
       {/* Header */}
       <div className="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
         <div className="max-w-7xl mx-auto px-4 py-6">
@@ -272,8 +275,27 @@ const DoctorListingPage: React.FC = () => {
               Filters
             </button>
           </div>
-
+          
           {/* Search Bar */}
+          <h1 className="relative z-10 mt-[-20px] mb-6 mx-auto max-w-4xl text-center text-3xl font-bold text-[#2E2C63] md:text-2xl lg:text-4xl dark:text-slate-300">
+            {"Find Your Doctor"
+              .split(" ")
+              .map((word, index) => (
+                <motion.span
+                  key={index}
+                  initial={{ opacity: 0, filter: "blur(4px)", y: 10 }}
+                  animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+                  transition={{
+                    duration: 0.3,
+                    delay: index * 0.1,
+                    ease: "easeInOut",
+                  }}
+                  className="mr-2 inline-block"
+                >
+                  {word}
+                </motion.span>
+              ))}
+          </h1>
           <div className="relative mb-6">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
             <input

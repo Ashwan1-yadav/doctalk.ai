@@ -2,10 +2,13 @@
 
 
 import { motion } from "motion/react";
+import Navbar from "./_components/Navbar";
+import Link from "next/link";
 
 export default function HeroSectionOne() {
   return (
     <div>
+      <Navbar/>
       <div className="relative  flex mt-18 flex-col items-center justify-center">
       <div className="absolute inset-y-0 left-0 h-full w-px bg-neutral-200/80 dark:bg-neutral-800/80">
         <div className="absolute top-0 h-40 w-px bg-gradient-to-b from-transparent via-blue-500 to-transparent" />
@@ -67,12 +70,22 @@ export default function HeroSectionOne() {
           }}
           className="relative z-10 mt-8 flex flex-wrap items-center justify-center gap-4"
         >
-          <button className="w-60 transform rounded-lg bg-[#2E2C63] px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
-            Explore Now
-          </button>
-          <button className="w-60 transform rounded-lg border border-gray-300 bg-white px-6 py-2 font-medium text-[#2E2C63] transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:text-white dark:hover:bg-gray-900">
-            Contact Support
-          </button>
+          <Link href="/dashboard" className="w-60" passHref>
+            <button
+              className="w-full transform rounded-lg bg-[#2E2C63] px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 cursor-pointer"
+              type="button"
+            >
+              Explore Now
+            </button>
+          </Link>
+          <Link href="/contacts" className="w-60" passHref>
+            <button
+              className="w-full transform rounded-lg border border-gray-300 bg-white px-6 py-2 font-medium text-[#2E2C63] transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:text-white dark:hover:bg-gray-900 cursor-pointer"
+              type="button"
+            >
+              Contact Support
+            </button>
+          </Link>
         </motion.div>
       </div>
     </div>
@@ -313,6 +326,7 @@ export default function HeroSectionOne() {
         
         </motion.p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-10 gap-8 max-w-6xl mx-auto">
+        {/* Dr. Ava Patel */}
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 flex flex-col items-center text-center border border-transparent hover:border-[#2E2C63] dark:hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-2">
           <img
             src="https://randomuser.me/api/portraits/women/44.jpg"
@@ -322,14 +336,17 @@ export default function HeroSectionOne() {
           <h3 className="text-xl font-semibold mb-1 text-[#2E2C63] dark:text-blue-200">Dr. Ava Patel</h3>
           <p className="text-gray-600 dark:text-gray-300 mb-4">General Physician</p>
           <div className="flex gap-2">
-            <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:shadow-lg dark:bg-white dark:text-black dark:hover:bg-gray-200">
-              Consult
-            </button>
+            <Link href="/dashboard?doctor=ava-patel" passHref>
+              <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:shadow-lg dark:bg-white dark:text-black dark:hover:bg-gray-200">
+                Consult
+              </button>
+            </Link>
             <button className="border border-[#2E2C63] text-[#2E2C63] px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:text-white hover:shadow-lg dark:border-blue-400 dark:text-blue-200 dark:hover:bg-gray-700">
               View
             </button>
           </div>
         </div>
+        {/* Dr. Ethan Kim */}
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 flex flex-col items-center text-center border border-transparent hover:border-[#2E2C63] dark:hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-2">
           <img
             src="https://randomuser.me/api/portraits/men/32.jpg"
@@ -339,14 +356,17 @@ export default function HeroSectionOne() {
           <h3 className="text-xl font-semibold mb-1 text-[#2E2C63] dark:text-blue-200">Dr. Ethan Kim</h3>
           <p className="text-gray-600 dark:text-gray-300 mb-4">Surgeon</p>
           <div className="flex gap-2">
-            <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:shadow-lg dark:bg-white dark:text-black dark:hover:bg-gray-200">
-              Consult
-            </button>
+            <Link href="/dashboard?doctor=ethan-kim" passHref>
+              <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:shadow-lg dark:bg-white dark:text-black dark:hover:bg-gray-200">
+                Consult
+              </button>
+            </Link>
             <button className="border border-[#2E2C63] text-[#2E2C63] px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:text-white hover:shadow-lg dark:border-blue-400 dark:text-blue-200 dark:hover:bg-gray-700">
               View
             </button>
           </div>
         </div>
+        {/* Dr. Sophia Lee */}
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 flex flex-col items-center text-center border border-transparent hover:border-[#2E2C63] dark:hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-2">
           <img
             src="https://randomuser.me/api/portraits/women/65.jpg"
@@ -356,14 +376,17 @@ export default function HeroSectionOne() {
           <h3 className="text-xl font-semibold mb-1 text-[#2E2C63] dark:text-blue-200">Dr. Sophia Lee</h3>
           <p className="text-gray-600 dark:text-gray-300 mb-4">ENT Specialist</p>
           <div className="flex gap-2">
-            <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:shadow-lg dark:bg-white dark:text-black dark:hover:bg-gray-200">
-              Consult
-            </button>
+            <Link href="/dashboard?doctor=sophia-lee" passHref>
+              <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:shadow-lg dark:bg-white dark:text-black dark:hover:bg-gray-200">
+                Consult
+              </button>
+            </Link>
             <button className="border border-[#2E2C63] text-[#2E2C63] px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:text-white hover:shadow-lg dark:border-blue-400 dark:text-blue-200 dark:hover:bg-gray-700">
               View
             </button>
           </div>
         </div>
+        {/* Dr. Liam Smith */}
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 flex flex-col items-center text-center border border-transparent hover:border-[#2E2C63] dark:hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-2">
           <img
             src="https://randomuser.me/api/portraits/men/41.jpg"
@@ -373,14 +396,17 @@ export default function HeroSectionOne() {
           <h3 className="text-xl font-semibold mb-1 text-[#2E2C63] dark:text-blue-200">Dr. Liam Smith</h3>
           <p className="text-gray-600 dark:text-gray-300 mb-4">Pediatrician</p>
           <div className="flex gap-2">
-            <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:shadow-lg dark:bg-white dark:text-black dark:hover:bg-gray-200">
-              Consult
-            </button>
+            <Link href="/dashboard?doctor=liam-smith" passHref>
+              <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:shadow-lg dark:bg-white dark:text-black dark:hover:bg-gray-200">
+                Consult
+              </button>
+            </Link>
             <button className="border border-[#2E2C63] text-[#2E2C63] px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:text-white hover:shadow-lg dark:border-blue-400 dark:text-blue-200 dark:hover:bg-gray-700">
               View
             </button>
           </div>
         </div>
+        {/* Dr. Carlos Rivera */}
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 flex flex-col items-center text-center border border-transparent hover:border-[#2E2C63] dark:hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-2">
           <img
             src="https://randomuser.me/api/portraits/men/55.jpg"
@@ -390,14 +416,17 @@ export default function HeroSectionOne() {
           <h3 className="text-xl font-semibold mb-1 text-[#2E2C63] dark:text-blue-200">Dr. Carlos Rivera</h3>
           <p className="text-gray-600 dark:text-gray-300 mb-4">Cardiologist</p>
           <div className="flex gap-2">
-            <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:shadow-lg dark:bg-white dark:text-black dark:hover:bg-gray-200">
-              Consult
-            </button>
+            <Link href="/dashboard?doctor=carlos-rivera" passHref>
+              <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:shadow-lg dark:bg-white dark:text-black dark:hover:bg-gray-200">
+                Consult
+              </button>
+            </Link>
             <button className="border border-[#2E2C63] text-[#2E2C63] px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:text-white hover:shadow-lg dark:border-blue-400 dark:text-blue-200 dark:hover:bg-gray-700">
               View
             </button>
           </div>
         </div>
+        {/* Dr. Emily Zhang */}
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 flex flex-col items-center text-center border border-transparent hover:border-[#2E2C63] dark:hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-2">
           <img
             src="https://randomuser.me/api/portraits/women/68.jpg"
@@ -407,14 +436,17 @@ export default function HeroSectionOne() {
           <h3 className="text-xl font-semibold mb-1 text-[#2E2C63] dark:text-blue-200">Dr. Emily Zhang</h3>
           <p className="text-gray-600 dark:text-gray-300 mb-4">Dermatologist</p>
           <div className="flex gap-2">
-            <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:shadow-lg dark:bg-white dark:text-black dark:hover:bg-gray-200">
-              Consult
-            </button>
+            <Link href="/dashboard?doctor=emily-zhang" passHref>
+              <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:shadow-lg dark:bg-white dark:text-black dark:hover:bg-gray-200">
+                Consult
+              </button>
+            </Link>
             <button className="border border-[#2E2C63] text-[#2E2C63] px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:text-white hover:shadow-lg dark:border-blue-400 dark:text-blue-200 dark:hover:bg-gray-700">
               View
             </button>
           </div>
         </div>
+        {/* Dr. Ahmed Hassan */}
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 flex flex-col items-center text-center border border-transparent hover:border-[#2E2C63] dark:hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-2">
           <img
             src="https://randomuser.me/api/portraits/men/77.jpg"
@@ -424,14 +456,17 @@ export default function HeroSectionOne() {
           <h3 className="text-xl font-semibold mb-1 text-[#2E2C63] dark:text-blue-200">Dr. Ahmed Hassan</h3>
           <p className="text-gray-600 dark:text-gray-300 mb-4">Neurologist</p>
           <div className="flex gap-2">
-            <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:shadow-lg dark:bg-white dark:text-black dark:hover:bg-gray-200">
-              Consult
-            </button>
+            <Link href="/dashboard?doctor=ahmed-hassan" passHref>
+              <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:shadow-lg dark:bg-white dark:text-black dark:hover:bg-gray-200">
+                Consult
+              </button>
+            </Link>
             <button className="border border-[#2E2C63] text-[#2E2C63] px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:text-white hover:shadow-lg dark:border-blue-400 dark:text-blue-200 dark:hover:bg-gray-700">
               View
             </button>
           </div>
         </div>
+        {/* Dr. Maria Rossi */}
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 flex flex-col items-center text-center border border-transparent hover:border-[#2E2C63] dark:hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-2">
           <img
             src="https://randomuser.me/api/portraits/women/12.jpg"
@@ -441,9 +476,11 @@ export default function HeroSectionOne() {
           <h3 className="text-xl font-semibold mb-1 text-[#2E2C63] dark:text-blue-200">Dr. Maria Rossi</h3>
           <p className="text-gray-600 dark:text-gray-300 mb-4">Gynecologist</p>
           <div className="flex gap-2">
-            <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:shadow-lg dark:bg-white dark:text-black dark:hover:bg-gray-200">
-              Consult
-            </button>
+            <Link href="/dashboard?doctor=maria-rossi" passHref>
+              <button className="bg-[#2E2C63] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:shadow-lg dark:bg-white dark:text-black dark:hover:bg-gray-200">
+                Consult
+              </button>
+            </Link>
             <button className="border border-[#2E2C63] text-[#2E2C63] px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer shadow hover:bg-black hover:text-white hover:shadow-lg dark:border-blue-400 dark:text-blue-200 dark:hover:bg-gray-700">
               View
             </button>
@@ -451,9 +488,11 @@ export default function HeroSectionOne() {
         </div>
       </div>
     <div className="flex justify-center mt-10">
-      <button className="bg-[#2E2C63] text-white px-8 py-3 rounded-full text-lg font-semibold shadow-md transition-all duration-300 hover:bg-black hover:scale-105 dark:bg-white dark:text-black dark:hover:bg-gray-200 cursor-pointer">
-        View All Doctors
-      </button>
+      <Link href="/doctors" passHref>
+        <button className="bg-[#2E2C63] text-white px-8 py-3 rounded-full text-lg font-semibold shadow-md transition-all duration-300 hover:bg-black hover:scale-105 dark:bg-white dark:text-black dark:hover:bg-gray-200 cursor-pointer">
+          View All Doctors
+        </button>
+      </Link>
     </div>
     </div>
     <div className="mt-15 mb-20 flex flex-col items-center justify-center">
@@ -466,9 +505,11 @@ export default function HeroSectionOne() {
           Empower yourself with 24/7 access, multilingual support, and a user-friendly experience.
           Your well-being, our priority—experience the future of healthcare with DocTalk.ai.
         </p>
-        <button className="bg-white text-[#2E2C63] font-semibold px-8 py-3 rounded-full text-lg shadow-md transition-all duration-300 hover:bg-gray-200 hover:scale-105">
-          Get Started
-        </button>
+        <Link href="/dashboard" passHref>
+          <button className="bg-white text-[#2E2C63] font-semibold px-8 py-3 rounded-full text-lg shadow-md transition-all duration-300 hover:bg-gray-200 hover:scale-105 cursor-pointer">
+            Get Started
+          </button>
+        </Link>
       </div>
     </div>
     <footer className="bg-gradient-to-br from-[#e0e7ff] via-[#f8fafc] to-[#c7d2fe] dark:from-[#1e293b] dark:via-[#2e2c63] dark:to-[#1e293b] border-t border-gray-200 dark:border-gray-700 mt-20 pt-12 pb-8 px-4 transition-colors duration-300">
@@ -489,22 +530,22 @@ export default function HeroSectionOne() {
                 <rect x="2" y="6" width="20" height="12" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
               </svg>
             </a>
-            <a href="tel:+1234567890" aria-label="Phone" className="hover:scale-110 transition-transform bg-white dark:bg-[#2E2C63] rounded-full p-2 shadow">
+            <a href="tel:+918534920960" aria-label="Phone" className="hover:scale-110 transition-transform bg-white dark:bg-[#2E2C63] rounded-full p-2 shadow">
               <svg className="w-5 h-5 text-[#2E2C63] dark:text-blue-200" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                 <path d="M22 16.92V21a2 2 0 01-2.18 2A19.72 19.72 0 013 5.18 2 2 0 015 3h4.09a2 2 0 012 1.72c.13 1.05.37 2.07.72 3.06a2 2 0 01-.45 2.11l-1.27 1.27a16 16 0 006.29 6.29l1.27-1.27a2 2 0 012.11-.45c.99.35 2.01.59 3.06.72a2 2 0 011.72 2z" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </a>
-            <a href="https://twitter.com/doctalkai" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="hover:scale-110 transition-transform bg-white dark:bg-[#2E2C63] rounded-full p-2 shadow">
+            <a href="https://x.com/Ashwan1_Yadav" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="hover:scale-110 transition-transform bg-white dark:bg-[#2E2C63] rounded-full p-2 shadow">
               <svg className="w-5 h-5 text-[#2E2C63] dark:text-blue-200" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M22.46 6c-.77.35-1.6.59-2.47.7a4.3 4.3 0 001.88-2.37 8.59 8.59 0 01-2.72 1.04 4.28 4.28 0 00-7.29 3.9A12.13 12.13 0 013 4.89a4.28 4.28 0 001.32 5.71c-.7-.02-1.36-.21-1.94-.53v.05a4.28 4.28 0 003.43 4.19c-.33.09-.68.14-1.04.14-.25 0-.5-.02-.74-.07a4.29 4.29 0 004 2.98A8.6 8.6 0 012 19.54a12.13 12.13 0 006.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.37-.01-.56A8.7 8.7 0 0024 4.59a8.48 8.48 0 01-2.54.7z"/>
               </svg>
             </a>
-            <a href="https://www.linkedin.com/company/doctalkai" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:scale-110 transition-transform bg-white dark:bg-[#2E2C63] rounded-full p-2 shadow">
+            <a href="https://www.linkedin.com/in/ashwani-yadav-a184b3253/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:scale-110 transition-transform bg-white dark:bg-[#2E2C63] rounded-full p-2 shadow">
               <svg className="w-5 h-5 text-[#2E2C63] dark:text-blue-200" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm15.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.88v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"/>
               </svg>
             </a>
-            <a href="https://facebook.com/doctalkai" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:scale-110 transition-transform bg-white dark:bg-[#2E2C63] rounded-full p-2 shadow">
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:scale-110 transition-transform bg-white dark:bg-[#2E2C63] rounded-full p-2 shadow">
               <svg className="w-5 h-5 text-[#2E2C63] dark:text-blue-200" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.326 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.408 24 22.674V1.326C24 .592 23.406 0 22.675 0"/>
               </svg>
@@ -536,23 +577,18 @@ export default function HeroSectionOne() {
           <h4 className="text-lg font-semibold text-[#2E2C63] dark:text-blue-200 mb-2">Quick Links</h4>
           <ul className="flex flex-col gap-2 text-gray-700 dark:text-gray-300 text-sm">
             <li>
-              <a href="/" className="hover:text-blue-600 dark:hover:text-blue-300 transition-colors">Home</a>
+              <Link href="/" className="hover:text-blue-600 dark:hover:text-blue-300 transition-colors">Home</Link>
             </li>
             <li>
-              <a href="#how-it-works" className="hover:text-blue-600 dark:hover:text-blue-300 transition-colors">How it works</a>
+              <Link href="/how-it-works" className="hover:text-blue-600 dark:hover:text-blue-300 transition-colors">How it works</Link>
             </li>
             <li>
-              <a href="#doctors" className="hover:text-blue-600 dark:hover:text-blue-300 transition-colors">Doctors</a>
+              <Link href="/doctors" className="hover:text-blue-600 dark:hover:text-blue-300 transition-colors">Doctors</Link>
             </li>
             <li>
-              <a href="#contact" className="hover:text-blue-600 dark:hover:text-blue-300 transition-colors">Contact</a>
+              <Link href="/contacts" className="hover:text-blue-600 dark:hover:text-blue-300 transition-colors">Contact</Link>
             </li>
-            <li>
-              <a href="/privacy" className="hover:text-blue-600 dark:hover:text-blue-300 transition-colors">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="/terms" className="hover:text-blue-600 dark:hover:text-blue-300 transition-colors">Terms of Service</a>
-            </li>
+            
           </ul>
         </div>
       </div>
