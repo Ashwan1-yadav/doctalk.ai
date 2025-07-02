@@ -26,6 +26,8 @@ The app is built using the following technologies:
 - 🛡️ **Clerk**: User authentication and management platform for secure sign-in, sign-up, and user profiles.
 - 🗣️ **Vapi**: AI voice model integration for real-time, conversational voice interactions.
 - 🧠 **Gemini AI Model**: Advanced AI model for natural language understanding and medical reasoning.
+- 🟦🐘 **Neon DB (PostgreSQL)**: Scalable, serverless PostgreSQL database for reliable and efficient data storage.
+- 🌱🧩 **Drizzle ORM**: Type-safe ORM for seamless database access and schema management.
 
 These tools together enable a seamless, secure, and intelligent doctor consultation experience.
 
