@@ -211,38 +211,7 @@ export default function DocTalkSignIn() {
             <SignUp/>
           </motion.div>
 
-          {/* Features list */}
-          <motion.div 
-            className="mt-8 space-y-3"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-          >
-            <div className="flex items-center gap-3 text-gray-600 dark:text-gray-300">
-              <div className="w-5 h-5 bg-[#2E2C63] rounded-full flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                  <path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
-              <span className="text-sm">Instant medical consultations</span>
-            </div>
-            <div className="flex items-center gap-3 text-gray-600 dark:text-gray-300">
-              <div className="w-5 h-5 bg-[#2E2C63] rounded-full flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                  <path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
-              <span className="text-sm">24/7 AI doctor availability</span>
-            </div>
-            <div className="flex items-center gap-3 text-gray-600 dark:text-gray-300">
-              <div className="w-5 h-5 bg-[#2E2C63] rounded-full flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                  <path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
-              <span className="text-sm">Secure & confidential</span>
-            </div>
-          </motion.div>
+          
         </div>
       </div>
     </div>
